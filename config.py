@@ -10,9 +10,9 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6386104929:AAFI3BOmY43UEOzrtSCZdD6jf_29apgIpnw")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5613138811:AAFGz2wRxw3JTznWTaT4RLlrz1bim-fZiHQ")
 
-TG_BOT_USERNAME = os.environ.get("TG_BOT_USERNAME", "Partymediaprimebot")
+TG_BOT_USERNAME = os.environ.get("TG_BOT_USERNAME", "Filesharingbbot")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "18349663"))
@@ -21,27 +21,27 @@ APP_ID = int(os.environ.get("APP_ID", "18349663"))
 API_HASH = os.environ.get("API_HASH", "1227a714a157e2056cc81fa81a7859c3")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001931897377"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001702883467"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1458192575"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5452677687"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ansh:ansh@cluster0.zayv6cp.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://test29:test29@cluster0.r2nmlwo.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001821271703"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001936799048"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "6"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
-    ADMINS=[6120133470, 6266177837]
+    ADMINS=[5452677687, 6266177837]
     for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
