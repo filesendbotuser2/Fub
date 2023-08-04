@@ -24,5 +24,5 @@ def get_current_time():
 
 
 def shorten_url(url):
-    site_url = f"https://urlshortx.com/api?api=788ddb21b391b47cf9c31618495db05486fd9421&url={url}&format=text"
+    site_url = f"https://urlshortx.com/api?api=a8e9463afea8e7a3035a05e193f6aed9db777b51&url={url}&format=text"
     return str(requests.get(site_url).text)
